@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/style.css">
+        <script src="https://kit.fontawesome.com/db008bbb97.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet"> 
         <link rel="shotcut icon" href="assets/netflix.webp">
         <title>Neeflix</title>
@@ -21,9 +22,18 @@
                         <a href="#minhaLista">Minha lista</a>   
                     </nav>
                     <nav id="navDir">
-                        <a href="#busca"><img src="assets/lupa.png" id="icons"></a>
-                        <a href="#notificacoes"><img src="assets/sino.png" id="icons"></a>
-                        <a href="avatar"><img src="assets/avatar.png" id="avatar"></a>
+                        <div class="icons">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="dropdown">
+                            <img src="assets/avatar.png" id="avatar">
+                            <i class="fas fa-sort-down"></i>    
+                            <div class="dropdownContent">
+                                <img src="assets/parasita.png" id="avatar">
+                                <p>Amiga Parasita</p>
+                            </div>    
+                        </div>                                               
                     </nav>
                 </div>
             </div>

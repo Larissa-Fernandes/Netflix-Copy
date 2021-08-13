@@ -70,9 +70,43 @@ a:hover{
     padding-right: 50px;
 }
 
-#icons{
-    width: 20px;
+.icons i{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.dropdown{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.dropdown i{
+    font-size: 15px;
     margin: 3px;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    -ms-transition: -ms-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+}
+
+.dropdown:hover i{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdownContent{
+    display: block;
 }
 
 #avatar {
