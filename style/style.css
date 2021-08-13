@@ -75,38 +75,36 @@ a:hover{
     margin: 10px;
 }
 
-.dropdown{
+.dropdown {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: nowrap row;
     align-items: center;
-    margin-left: 10px;
 }
 
 .dropdown i{
     font-size: 15px;
     margin: 3px;
-    -webkit-transition: -webkit-transform .2s ease-in-out;
-    -ms-transition: -ms-transform .2s ease-in-out;
-    transition: transform .2s ease-in-out;
-}
-
-.dropdown:hover i{
-    transform:rotate(180deg);
-    -ms-transform:rotate(180deg);
-    -webkit-transform:rotate(180deg);
 }
 
 .dropdownContent {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    margin-top: 150px;
+    margin-left: -100px;
+
+    background-color: rgba(0,0,0,0.85);
+    width: 150px;
 }
 
 .dropdown:hover .dropdownContent{
-    display: block;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    font-size: 12px;
 }
 
 #avatar {
