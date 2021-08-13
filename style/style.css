@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red: #e50914;
+    --black: #141414;
+}
+
+body{
+    background-color: var(--black);
+    font-family: 'Roboto';   
+    color: white;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    color: #E8E8E8;
+    padding: 7px;
+    transition: ease-out 0.3s;
+}
+
+a.active, a.active:hover{
+    color: white;
+    font-weight: bold;
+    opacity: 100%;
+}
+
+a:hover{
+    opacity: 70%;
+    transition: ease-in 0.3s;
+}
+
+/* banner */
+.banner {
+    background: linear-gradient(to bottom, transparent 70%, var(--black) 99%), url("/Netflix/assets/SHINeeBanner.jpg");
+    height: 650px;
+    background-size: cover;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    align-items: center;
+
+    background-image: linear-gradient(to top, transparent, var(--black));
+}
+
+#logo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    color: var(--red);
+    padding-left: 50px;
+}
+
+#navEsq{
+    padding-left: 30px;
+    align-self: center;
+}
+
+#navDir{
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    padding-right: 50px;
+}
+
+#icons{
+    width: 20px;
+    margin: 3px;
+}
+
+#avatar {
+    width: 30px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.navItems{
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* INFOS */
+#category img {
+    width: 35px;
+}
+
+#category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;     
+
+    padding-bottom: 15px;   
+}
+
+#category p{
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.infoBanner {
+    height: 580px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 50px;
+}
+
+.infoBanner img {
+    width: 300px;
+}
+
+#subtitle{
+    font-weight: bold;
+    font-size: 23px;
+    
+    padding-top: 20px;
+
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+#textInfo{
+    font-size: 18px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+
+    padding-top: 10px;
+}
+
+/* Botões */
+.bannerButtons{
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+}
+
+#playButton{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+
+    text-align: center;
+    padding: 10px 25px;
+    margin-top: 15px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+}
+
+#playButton:hover{
+    background-color: rgba(255,255,255,0.8);
+}
+
+#playImg{
+    width: 15px;    
+    align-self: center
+}
+
+#playButton p{
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+#infoButton{
+    background-color: #6d6d6edc;
+    border: none;
+    border-radius: 5px;
+
+    text-align: center;
+    color: white;
+
+    padding: 10px 25px;
+    margin-top: 15px;
+    margin-left: 10px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+}
+
+#infoButton:hover{
+    background-color: rgba(78, 78, 78, 0.7)
+}
+
+#infoImg{
+    width: 18px;    
+    align-self: center
+}
+
+#infoButton p{
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+}
