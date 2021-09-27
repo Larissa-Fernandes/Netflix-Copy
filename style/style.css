@@ -81,36 +81,79 @@ a:hover{
     align-items: center;
 }
 
-.dropdown i{
+#setinha{
     font-size: 15px;
     margin: 3px;
+
+    transition: ease-out 150ms;
 }
 
 .dropdownContent {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+
     position: absolute;
-    margin-top: 150px;
+    margin-top: 280px;
     margin-left: -100px;
+    padding: 10px 0px 10px 10px;
 
     background-color: rgba(0,0,0,0.85);
-    width: 150px;
+    width: 180px;    
+
+    font-size: 13px;
+    transition: ease-out 150ms;
 }
 
 .dropdown:hover .dropdownContent{
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown:hover #setinha{
+    transform: rotate(180deg);
+    transition: ease-in 150ms;
+}
+
+.friend{
     display: flex;
     flex-flow: row nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+    align-content: flex-start;
+    align-items: center;    
+    padding: 0px;
+}
 
-    font-size: 12px;
+.dropdownContent hr{
+    margin: 10px 0px 10px 0px;
+    border-top: 1px solid;
+    border-bottom: none;
+}
+
+.dropdownContent a {
+    padding: 10px 0px 10px 0px;
+    margin: 10px 0 10px 0;
+}
+
+.dropdownContent a:hover {
+    text-decoration: underline;
+    opacity: 100%;
+}
+
+#bold {
+    font-weight: bold;
+    margin-top: -4px;
 }
 
 #avatar {
     width: 30px;
     border-radius: 4px;
-    margin: 5px;
+    margin: 15px;
+}
+
+#avatarF {
+    width: 30px;
+    border-radius: 4px;
+    margin-right: 10px;
 }
 
 .navItems{
