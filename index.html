@@ -4,9 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/style.css">
-        <script src="https://kit.fontawesome.com/db008bbb97.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet"> 
         <link rel="shotcut icon" href="assets/netflix.webp">
+
+        <!-- Roboto -->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="style/OwlCarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="style/OwlCarousel/owl.theme.default.min.css">
+        
         <title>Neeflix</title>
     </head>
     <body>
@@ -44,7 +50,7 @@
                     </nav>
                 </div>
             </div>
-            <div class="infoBanner">
+            <div class="infoBanner marginLeft">
                 <div id="category">
                     <img src="assets/netflix.webp">
                     <p>M Ú S I C A</p>
@@ -64,5 +70,50 @@
                 </div>
             </div>
         </div>
+        <div class="slide marginLeft">
+            <div class="slideTitle">
+                <p>Em alta</p>
+                <span id=seeMore>Ver tudo <i class="fas fa-chevron-right rightArrow"></i></span>
+            </div>
+            <div class="slideContent">
+                <div class="owl-carousel owl-theme carouselContent">
+                    <div class="item">
+                        <img class="filmBanner" src="assets/avatarBanner.jpg" alt="Avatar: A lenda de Aang">
+                    </div>
+                    <div class="item">
+                        <img class="filmBanner" src="assets/casteloAnimadoBanner.jpg" alt="O Castelo Animado">
+                    </div>
+                    <div class="item">
+                        <img class="filmBanner" src="assets/darkBanner.jpg" alt="Dark">
+                    </div>
+                    <div class="item">
+                        <img class="filmBanner" src="assets/gekkanShoujoNozakiKun.jpg" alt="Gekkan Shoujo Nozaki-kun">
+                    </div>
+                    <div class="item">
+                        <img class="filmBanner" src="assets/irmaoJorelBanner.jpg" alt="Irmão do Jorel">
+                    </div>
+                    <div class="item">
+                        <img class="filmBanner" src="assets/lupinBanner.jpg" alt="Lupin">
+                    </div>
+                    <div class="item">
+                        <img class="filmBanner" src="assets/umbrellaAcademyBanner.jpg" alt="The Umbrella Academy">
+                    </div>
+                    <div class="item">
+                        <img class="filmBanner" src="assets/yowamushiPedalBanner.jpg" alt="Yowamushi Pedal">
+                    </div>
+                    <div class="item">
+                        <img class="filmBanner" src="assets/zankyouNoTerrorBanner.jpg" alt="Zankyou no Terror">
+                    </div>                
+                </div>
+            </div>
+        </div>
     </body>
+
+    <!-- FontAwesome: Icons -->
+    <script src="https://kit.fontawesome.com/db008bbb97.js" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel -->
+    <script src="js/OwlCarousel/jquery.min.js"></script>
+    <script src="js/OwlCarousel/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
 </html>
